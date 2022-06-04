@@ -19,7 +19,8 @@ let timeToFinish = null;
 const currentTime = Date.now();
 
 const options = {
-  enableTime: true,
+   enableTime: true,
+   
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
