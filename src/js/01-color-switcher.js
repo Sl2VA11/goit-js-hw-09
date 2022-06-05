@@ -22,18 +22,21 @@ function changeBodyColor() {
 function clearBodyColor() {
    clearInterval(timerId);
 }
-const handleButtonClick = () => {
-  if (timerId) {
-     clearBodyColor();
-     
-  } else {
-    changeBodyColor();
-  }
+
+
+
+const handleButtonStop = () => {
+   if (timerId) {
+      clearBodyColor();
+   } 
+//   } else {
+//     changeBodyColor();
+//   }
 };
 
 
-refs.btnStart.addEventListener('click', handleButtonClick);
-refs.btnStop.addEventListener('click', handleButtonClick);
+refs.btnStart.addEventListener('click', changeBodyColor);
+refs.btnStop.addEventListener('click', handleButtonStop);
 
 
 
